@@ -118,3 +118,82 @@
         }
     }
 }
+
+.courses {
+    width: 100%;
+    min-height: 888px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    &__boxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(349px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 56px 30px;
+        height: auto;
+        margin-bottom: 140px;
+        .box {
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            @include flex-group(flex, center, center);
+            width: 100%;
+            height: 346px;
+            position: relative;
+            padding: 64px 32px 40px 32px;
+            background-color: #fff;
+            border-radius: 15px;
+            &__logo {
+                position: absolute;
+                left: 32px;
+                top: -26px;
+            }
+            &__description {
+                h3 {
+                    /* font-size: 24px;
+                    font-weight: 800;
+                    line-height: 30px; */
+                    @include font-group(24px, 800, 30px);
+                    color: $color-dark;
+                    margin-bottom: 24px;
+                }
+                p {
+                    /* font-size: 18px;
+                    font-weight: 500;
+                    line-height: 28px; */
+                    @include font-group(18px, 500, 28px);
+                    color: $color-letter;
+                    margin-bottom: 24px;
+                }
+                &__btn {
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $color-link;
+                    /* font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 700; */
+                    @include font-group(18px, 700, 28px);
+                    &:hover {
+                        color: $color-link-hover;
+                    }
+                }
+            }
+        }
+        .box.box-color {
+            background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+            border-radius: 15px;
+            height: 322px;
+            align-self: end;
+            padding: 64px 32px 138px 32px;
+            @include small {
+                height: 120px;
+                padding: 24px 29px 32px 28px;
+            }
+            .box-color__paragraph {
+                @include font-group(32px, 800, 40px);
+                color: #fff;
+                @include small {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
