@@ -1,0 +1,139 @@
+@import "./main";
+
+.container {
+    width: 77.08%;
+    margin: 0 auto;
+    @include large {
+        width: 85%;
+    }
+    @include medium {
+        width: 89.71%;
+    }
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .navbar {
+        padding-top: 24px;
+        margin-bottom: 172px;
+        @include large {
+            margin-bottom: 130px;
+        }
+        @include medium {
+            margin-bottom: 99px;
+        }
+        &__btn {
+            position: relative;
+            z-index: 99999;
+            .btn {
+                @include medium {
+                    width: 140px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 226px;
+        @include small {
+            flex-direction: column;
+            margin-bottom: 66px;
+        }
+        .content__left {
+            width: 41.17%;
+            /* margin-top: 172px; */
+            @include xxl-large {
+                /* margin-top: 120px; */
+            }
+            @include large {
+                /* margin-top: 90px; */
+            }
+            @include medium {
+                width: 51.82%;
+                /* margin-top: 49.77px; */
+            }
+            @include small {
+                width: 100%;
+                margin-bottom: 46px;
+            }
+            &__title {
+                font-size: 56px;
+                font-weight: 800;
+                line-height: 71px;
+                color: #13183f;
+                margin-bottom: 29px;
+                @include medium {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+            }
+            &__paragraph {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #83869a;
+                margin-bottom: 40px;
+                @include medium {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .content__right {
+            position: relative;
+            @include small {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .img-big {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-52%, -58%);
+                /* transform: translate(-52%, -50%); */
+                z-index: 0;
+                @include large {
+                    width: 850px;
+                    transform: translate(-49%, -68%);
+                }
+                @include medium {
+                    display: none;
+                    /* width: 640px;
+                    transform: translate(-55%, -55%); */
+                }
+                @include small {
+                    display: none;
+                }
+            }
+            .img-tablet {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-52%, -50%);
+                z-index: 0;
+                display: none;
+                @include medium {
+                    display: block;
+                    width: 640px;
+                    transform: translate(-55%, -58%);
+                }
+                @include small {
+                    display: none;
+                }
+            }
+            .img-small {
+                display: none;
+                @include small {
+                    display: block;
+                }
+            }
+        }
+    }
+}
