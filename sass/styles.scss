@@ -36,9 +36,7 @@
         }
     }
     &__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-group(flex, center, space-between);
         margin-bottom: 226px;
         @include small {
             flex-direction: column;
@@ -46,26 +44,16 @@
         }
         .content__left {
             width: 41.17%;
-            /* margin-top: 172px; */
-            @include xxl-large {
-                /* margin-top: 120px; */
-            }
-            @include large {
-                /* margin-top: 90px; */
-            }
             @include medium {
                 width: 51.82%;
-                /* margin-top: 49.77px; */
             }
             @include small {
                 width: 100%;
                 margin-bottom: 46px;
             }
             &__title {
-                font-size: 56px;
-                font-weight: 800;
-                line-height: 71px;
-                color: #13183f;
+                @include font-group(56px, 800, 71px);
+                color: $color-dark;
                 margin-bottom: 29px;
                 @include medium {
                     font-size: 40px;
@@ -73,10 +61,8 @@
                 }
             }
             &__paragraph {
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 28px;
-                color: #83869a;
+                @include font-group(18px, 500, 28px);
+                color: $color-letter;
                 margin-bottom: 40px;
                 @include medium {
                     font-size: 16px;
@@ -88,16 +74,13 @@
             position: relative;
             @include small {
                 width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-group(flex, center, center);
             }
-            .img-big {
+            .img-desktop {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-52%, -58%);
-                /* transform: translate(-52%, -50%); */
                 z-index: 0;
                 @include large {
                     width: 850px;
@@ -105,8 +88,6 @@
                 }
                 @include medium {
                     display: none;
-                    /* width: 640px;
-                    transform: translate(-55%, -55%); */
                 }
                 @include small {
                     display: none;

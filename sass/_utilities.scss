@@ -1,0 +1,13 @@
+/* MIXINS */
+@mixin flex-group($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin font-group($size, $weight, $height) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+

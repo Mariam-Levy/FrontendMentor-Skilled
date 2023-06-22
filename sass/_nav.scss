@@ -1,7 +1,5 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-group(flex, center, space-between);
     height: auto;
     &__logo {
         width: auto;
