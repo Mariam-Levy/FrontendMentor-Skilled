@@ -1,0 +1,27 @@
+.btn{
+    width: 167px;
+    height: 56px;
+    background: $color-dark;
+    border-radius: 28px;
+    color: #fff;
+    text-align: center;
+    @include font-group(18px, 700, 28px);
+    border: none;
+    &:hover {
+        background: $color-grey-hover;
+        cursor: pointer;
+    }
+}
+.modificador {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    }
+}
+.btn.modificador-dos {
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    &:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+}

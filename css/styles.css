@@ -37,6 +37,38 @@ body {
 Breakpoints
 ==========================================================================
 */
+.btn {
+  width: 167px;
+  height: 56px;
+  background: #13183f;
+  border-radius: 28px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  border: none;
+}
+.btn:hover {
+  background: #666ca3;
+  cursor: pointer;
+}
+
+.modificador {
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+.modificador:hover {
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.btn.modificador-dos {
+  background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+.btn.modificador-dos:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
 .container {
   width: 77.08%;
   margin: 0 auto;
@@ -85,7 +117,8 @@ Breakpoints
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 226px;
+  /* margin-bottom: 226px; */
+  margin-bottom: 265px;
 }
 @media (max-width: 576px) {
   .hero__content {
@@ -197,6 +230,7 @@ Breakpoints
 }
 
 .courses {
+  /* border: 2px solid red; */
   width: 100%;
   min-height: 888px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -207,12 +241,10 @@ Breakpoints
   grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
   gap: 56px 30px;
   height: auto;
-  margin-bottom: 140px;
+  /* margin-bottom: 140px; */
+  padding-bottom: 140px;
 }
 .courses__boxes .box {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,32 +261,23 @@ Breakpoints
   top: -26px;
 }
 .courses__boxes .box__description h3 {
-  /* font-size: 24px;
-  font-weight: 800;
-  line-height: 30px; */
   font-size: 24px;
   font-weight: 800;
   line-height: 30px;
-  color: #13183f;
+  color: #13183F;
   margin-bottom: 24px;
 }
 .courses__boxes .box__description p {
-  /* font-size: 18px;
-  font-weight: 500;
-  line-height: 28px; */
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #83869a;
+  color: #83869A;
   margin-bottom: 24px;
 }
 .courses__boxes .box__description__btn {
   text-decoration: none;
   cursor: pointer;
   color: #f74780;
-  /* font-size: 18px;
-  line-height: 28px;
-  font-weight: 700; */
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -285,6 +308,10 @@ Breakpoints
   .courses__boxes .box.box-color .box-color__paragraph {
     font-size: 24px;
   }
+}
+
+footer {
+  background-color: #13183F;
 }
 
 /*# sourceMappingURL=styles.css.map */

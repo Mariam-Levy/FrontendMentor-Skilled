@@ -37,7 +37,8 @@
     }
     &__content {
         @include flex-group(flex, center, space-between);
-        margin-bottom: 226px;
+        /* margin-bottom: 226px; */
+        margin-bottom: 265px;
         @include small {
             flex-direction: column;
             margin-bottom: 66px;
@@ -120,6 +121,7 @@
 }
 
 .courses {
+    /* border: 2px solid red; */
     width: 100%;
     min-height: 888px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -129,11 +131,10 @@
         grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
         gap: 56px 30px;
         height: auto;
-        margin-bottom: 140px;
+        /* margin-bottom: 140px; */
+        padding-bottom: 140px;
+
         .box {
-            /* display: flex;
-            align-items: center;
-            justify-content: center; */
             @include flex-group(flex, center, center);
             width: 100%;
             height: 346px;
@@ -147,32 +148,24 @@
                 top: -26px;
             }
             &__description {
+                
                 h3 {
-                    /* font-size: 24px;
-                    font-weight: 800;
-                    line-height: 30px; */
                     @include font-group(24px, 800, 30px);
-                    color: $color-dark;
+                    color: #13183F;
                     margin-bottom: 24px;
                 }
                 p {
-                    /* font-size: 18px;
-                    font-weight: 500;
-                    line-height: 28px; */
                     @include font-group(18px, 500, 28px);
-                    color: $color-letter;
+                    color: #83869A;
                     margin-bottom: 24px;
                 }
                 &__btn {
                     text-decoration: none;
                     cursor: pointer;
-                    color: $color-link;
-                    /* font-size: 18px;
-                    line-height: 28px;
-                    font-weight: 700; */
+                    color: #f74780;
                     @include font-group(18px, 700, 28px);
                     &:hover {
-                        color: $color-link-hover;
+                        color: #FFA7C3;
                     }
                 }
             }
@@ -196,4 +189,8 @@
             }
         }
     }
+}
+
+footer {
+    background-color: #13183F;
 }
