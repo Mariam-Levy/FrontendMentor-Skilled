@@ -37,8 +37,10 @@
     }
     &__content {
         @include flex-group(flex, center, space-between);
-        /* margin-bottom: 226px; */
         margin-bottom: 265px;
+        @include large {
+            margin-bottom: 93px;
+        }
         @include small {
             flex-direction: column;
             margin-bottom: 66px;
@@ -121,7 +123,6 @@
 }
 
 .courses {
-    /* border: 2px solid red; */
     width: 100%;
     min-height: 888px;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -131,7 +132,6 @@
         grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
         gap: 56px 30px;
         height: auto;
-        /* margin-bottom: 140px; */
         padding-bottom: 140px;
 
         .box {
@@ -151,21 +151,21 @@
                 
                 h3 {
                     @include font-group(24px, 800, 30px);
-                    color: #13183F;
+                    color: $color-dark;
                     margin-bottom: 24px;
                 }
                 p {
                     @include font-group(18px, 500, 28px);
-                    color: #83869A;
+                    color: $color-letter;
                     margin-bottom: 24px;
                 }
                 &__btn {
                     text-decoration: none;
                     cursor: pointer;
-                    color: #f74780;
+                    color: $color-link;
                     @include font-group(18px, 700, 28px);
                     &:hover {
-                        color: #FFA7C3;
+                        color: $color-link-hover;
                     }
                 }
             }
@@ -192,5 +192,5 @@
 }
 
 footer {
-    background-color: #13183F;
+    background-color: $color-dark;
 }

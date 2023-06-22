@@ -117,8 +117,12 @@ Breakpoints
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-bottom: 226px; */
   margin-bottom: 265px;
+}
+@media (max-width: 991.98px) {
+  .hero__content {
+    margin-bottom: 93px;
+  }
 }
 @media (max-width: 576px) {
   .hero__content {
@@ -230,7 +234,6 @@ Breakpoints
 }
 
 .courses {
-  /* border: 2px solid red; */
   width: 100%;
   min-height: 888px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
@@ -241,7 +244,6 @@ Breakpoints
   grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
   gap: 56px 30px;
   height: auto;
-  /* margin-bottom: 140px; */
   padding-bottom: 140px;
 }
 .courses__boxes .box {
@@ -264,14 +266,14 @@ Breakpoints
   font-size: 24px;
   font-weight: 800;
   line-height: 30px;
-  color: #13183F;
+  color: #13183f;
   margin-bottom: 24px;
 }
 .courses__boxes .box__description p {
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  color: #83869A;
+  color: #83869a;
   margin-bottom: 24px;
 }
 .courses__boxes .box__description__btn {
@@ -311,7 +313,7 @@ Breakpoints
 }
 
 footer {
-  background-color: #13183F;
+  background-color: #13183f;
 }
 
 /*# sourceMappingURL=styles.css.map */
